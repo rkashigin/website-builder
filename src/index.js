@@ -8,5 +8,8 @@ model.forEach(block => {
 
     const toHTML = templates[block.type];
 
-    $website.insertAdjacentHTML('beforeend', toHTML(block));
+    if (toHTML) {
+        $website.insertAdjacentHTML('beforeend', toHTML(block));
+    }
+
 });
