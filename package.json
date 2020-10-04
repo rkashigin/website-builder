@@ -1,0 +1,23 @@
+{
+  "name": "website-builder",
+  "version": "1.0.0",
+  "description": "No dependicies JS website-builder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkashigin/website-builder.git"
+  },
+  "keywords": [
+    "js",
+    "javascript"
+  ],
+  "author": "Roman Kashigin <r.kashigin@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rkashigin/website-builder/issues"
+  },
+  "homepage": "https://github.com/rkashigin/website-builder#readme"
+}
