@@ -4,7 +4,7 @@
   "description": "No dependicies JS website-builder",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "parcel ./src/index.html"
   },
   "repository": {
     "type": "git",
