@@ -4,7 +4,8 @@
   "description": "No dependicies JS website-builder",
   "main": "src/index.js",
   "scripts": {
-    "serve": "parcel ./src/index.html -p 3000 --open"
+    "serve": "parcel ./src/index.html -p 3000 --open",
+    "build": "parcel build ./src/index.html"
   },
   "repository": {
     "type": "git",
