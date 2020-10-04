@@ -13,8 +13,14 @@ const model = [
             '111111111',
             '222222222',
             '333333333',
+            '444444444',
+            '555555555',
         ],
-    }
+    },
+    {
+        type: 'image',
+        value: './assets/img.png'
+    },
 ];
 
 const $website = document.querySelector('#website');
@@ -28,9 +34,11 @@ model.forEach(block => {
         html = text(block);
     } else if (block.type === 'columns') {
         html = columns(block);
+    } else if (block.type === 'image') {
+        html = image(block);
     }
 
-    $site.insertAdjacentHTML('beforeend', html);
+    $website.insertAdjacentHTML('beforeend', html);
 });
 
 function title(block) {
@@ -58,6 +66,14 @@ function columns(block) {
     return `
         <div class="row">
             ${html.join('')}
+        </div>
+    `;
+}
+
+function image(block) {
+    return `
+        <div class="row">
+            <img src="${block.value}"/>
         </div>
     `;
 }
