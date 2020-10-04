@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/rkashigin/website-builder/issues"
   },
-  "homepage": "https://github.com/rkashigin/website-builder#readme"
+  "homepage": "https://github.com/rkashigin/website-builder#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
 }
