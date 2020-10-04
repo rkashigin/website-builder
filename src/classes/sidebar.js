@@ -2,15 +2,16 @@ import {block} from "../utils";
 import {TextBlock, TitleBlock} from "./blocks";
 
 export class Sidebar {
-    constructor(selector) {
+    constructor(selector, updateCallback) {
         this.$el = document.querySelector(selector);
+        this.update = updateCallback;
 
         this.init();
     }
 
     init() {
         this.$el.insertAdjacentHTML('afterbegin', this.template);
-        this.$el.addEventListener('submit', this.addBlock);
+        this.$el.addEventListener('submit', this.addBlock.bind(this));
     }
 
     get template() {
@@ -27,14 +28,13 @@ export class Sidebar {
         const value = event.target.value.value;
         const styles = event.target.styles.value;
 
-        let newBlock;
+        const newBlock = type === 'text'
+            ? new TextBlock(value, {styles})
+            : new TitleBlock(value, {styles});
 
-        if (type === 'text') {
-            newBlock = new TextBlock(value, {styles});
-        } else {
-            newBlock = new TitleBlock(value, {styles});
-        }
+        this.update(newBlock);
 
-        console.log(newBlock);
+        event.target.value.value = '';
+        event.target.styles.value = '';
     }
 }

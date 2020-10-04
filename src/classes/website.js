@@ -6,6 +6,7 @@ export class Website {
     }
 
     render(model) {
+        this.$el.innerHTML = '';
         model.forEach(block => {
             this.$el.insertAdjacentHTML('beforeend', block.toHTML());
         });
