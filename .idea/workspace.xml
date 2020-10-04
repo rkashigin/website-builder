@@ -18,6 +18,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/styles" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -26,7 +32,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601780234908</updated>
-      <workItem from="1601780235948" duration="2859000" />
+      <workItem from="1601780235948" duration="7671000" />
     </task>
     <servers />
   </component>
@@ -34,9 +40,13 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="925" y="248" key="run.anything.popup" timestamp="1601780834622">
+    <state x="925" y="248" key="run.anything.popup" timestamp="1601787203634">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="925" y="248" key="run.anything.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1601780834622" />
+    <state x="925" y="248" key="run.anything.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1601787203634" />
+    <state x="925" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1601784621859">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="925" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1601784621859" />
   </component>
 </project>
